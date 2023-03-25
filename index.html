@@ -1,3 +1,15 @@
+<?php
+    header('Location: index.html');
+    // The message
+    $name = $_GET["name"];
+    $email_address = $_GET["email"];
+    $message = $_GET["message"];
+    $full_message = $name + '\n\r' + $email_address + '\n\r' + $message;
+    $subject = $_GET["subject"];
+    // Send
+    mail('christian.strydom@gmail.com', $subject, $full_message);
+  ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -1188,7 +1200,7 @@
 
           <!-- action="mailto:christian.strydom@gmail.com" method="post" enctype="text/plain" -->
 
-          <form action="send_email_to_minerva.php" class="form" data-form>
+          <form action="subscriberform.php" class="form" data-form>
 
             <div class="input-wrapper">
               <input type="text" name="name" class="form-input" placeholder="Full name" required data-form-input>
