@@ -1858,6 +1858,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   .sidebar-info_more {
     opacity: 1;
     visibility: visible;
+    padding-right: 0;
   }
 
   .contacts-list { grid-template-columns: 1fr; }
@@ -1865,7 +1866,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   .contact-info :is(.contact-link) {
     white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis;
+    /* text-overflow: ellipsis; */
   }
 
   .contact-info :is(.contact-link, time, address) {
